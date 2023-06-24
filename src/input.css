@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+
+.burger .close {
+    display: none;
+}
+
+.burger.active .close {
+    display: block;
+}
+
+.burger.active .menu {
+    display: none;
+} 
+
+
+
+
+@media screen and (max-width:991px) {
+    ul {
+        @apply right-0;
+        
+    }
+    ul.active {
+        right: 0;
+    }
+}
+
